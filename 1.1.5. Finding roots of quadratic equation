@@ -1,0 +1,24 @@
+import cmath
+def find_roots():
+	a= float(input("a: "))
+	b= float(input("b: "))
+	c= float(input("c: "))
+
+	if a == 0:
+		print("Not a qudratic equation.")
+		return
+
+	discriminant = b**2-4*a*c
+	if discriminant>0:
+		root1= (-b + discriminant ** 0.5)/(2*a)
+		root2= (-b - discriminant ** 0.5)/(2*a)
+		print(f"The roots are: {root1:.2f} and {root2:.2f}")
+
+	elif discriminant == 0:
+		root = -b /(2*a)
+		print(f"The root is: {-0.00 if b == 0 else root:.2f}")
+	else:
+		root1 = (-b + cmath.sqrt(discriminant)) / (2*a)
+		root2 = (-b - cmath.sqrt(discriminant)) / (2*a)
+		print(f"The roots are: {root1.real if root1.real !=0 else -0.00:.2f}{root1.imag:+.2f}j and {root2.real if root2.real != 0 else -0.00:.2f}{root2.imag:+.2f}j")
+find_roots()
