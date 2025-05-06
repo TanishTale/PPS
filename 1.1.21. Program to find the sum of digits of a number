@@ -1,0 +1,5 @@
+num = input ("num: ")
+
+digit_sum = sum(int(digit) for digit in num)
+
+print(f"sum: {digit_sum}")
