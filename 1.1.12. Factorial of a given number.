@@ -1,0 +1,9 @@
+a= int(input("Enter a number : "))
+if a<0:
+	print("Enter a positive number\n")
+
+else:
+	Factorial =1
+	for i in range(1,a+1):
+		Factorial *= i
+	print(f"Factorial of given number is : {Factorial}\n")
