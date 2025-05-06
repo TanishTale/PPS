@@ -1,0 +1,2 @@
+T= float(input('celsius: '))
+print(f'fahrenheit: {1.8*T+32}')
