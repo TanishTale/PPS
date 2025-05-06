@@ -1,0 +1,10 @@
+import string
+
+def remove_punctuation(sentence):
+    # Use string.punctuation to get all punctuation characters
+    no_punct = ''.join(char for char in sentence if char not in string.punctuation)
+    print(no_punct)
+
+# Input from user
+sentence = input("")
+remove_punctuation(sentence)
